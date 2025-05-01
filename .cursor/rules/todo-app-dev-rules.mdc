@@ -1,0 +1,95 @@
+---
+description: Follow the rules to better understand the project
+globs: *
+alwaysApply: false
+---
+# Modern Todo App Developer Rules
+
+## Stack Overview
+- **Backend**: Node.js (20.x LTS/22.x), Express (4.18.x), MongoDB (8.0.x), Mongoose (8.14.x)
+- **Frontend**: React (18.3.x), React Router, Axios
+- **Architecture**: REST API backend with React SPA frontend
+- **Module System**: ES Modules throughout codebase
+- **Development**: Nodemon for backend, Vite for frontend (recommended)
+
+## Project Structure Overview
+```
+/modern-todo-app
+├── backend/                # Express + MongoDB API
+│   ├── src/
+│   │   ├── config/         # DB connection, env config
+│   │   ├── controllers/    # Route controllers
+│   │   ├── models/         # Mongoose models
+│   │   ├── routes/         # Express routes
+│   │   ├── middleware/     # Custom middleware
+│   │   └── utils/          # Utility functions
+│   ├── index.js            # Server entry point
+│   └── package.json        # Backend dependencies
+├── frontend/               # React frontend
+│   ├── src/
+│   │   ├── components/     # Shared components
+│   │   ├── features/       # Feature-based components
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── services/       # API services
+│   │   └── utils/          # Utility functions
+│   └── package.json        # Frontend dependencies
+└── documentation/          # Project documentation
+```
+
+## Development Process
+1. **Setup**: Clone repo, run `npm install` in both backend and frontend directories
+2. **Environment**: Create `.env` file in backend with required variables (see documentation)
+3. **Development Workflow**:
+   - Backend: `cd backend && npm run dev` (runs nodemon)
+   - Frontend: `cd frontend && npm run dev` (runs Vite server)
+   - Work on feature branches named `feature/[feature-name]`
+   - Submit PRs to `main` branch for review
+4. **Testing**: Run tests with `npm test` before submitting PR
+5. **Code Reviews**: Required before merging to main branch
+
+## Deployment Process Overview
+1. **Backend Deployment**:
+   - Create production environment variables
+   - Build backend (if TypeScript is used)
+   - Deploy to cloud service (Render, Heroku, etc.)
+   - Set up MongoDB Atlas for production database
+2. **Frontend Deployment**:
+   - Build production bundle: `npm run build`
+   - Deploy static assets to hosting service (Netlify, Vercel, etc.)
+   - Configure environment variables for production API URL
+3. **Monitoring**: Set up logging and monitoring for production services
+
+## Development Rules
+1. **Coding Standards**:
+   - Use ES Modules (`import`/`export`) throughout codebase
+   - Use async/await for asynchronous operations
+   - Implement proper error handling in all async functions
+   - Follow functional programming principles in React components
+   - Use custom hooks for reusable logic in frontend
+
+2. **Backend Guidelines**:
+   - Separate business logic (controllers) from routes
+   - Use middleware for cross-cutting concerns
+   - Implement comprehensive validation using Mongoose schemas
+   - Use centralized error handling middleware
+   - Document all API endpoints
+
+3. **Frontend Guidelines**:
+   - Use functional components with hooks
+   - Implement feature-based organization
+   - Create dedicated API service layer
+   - Use React Router for navigation
+   - Implement responsive design
+   - Ensure accessibility compliance
+
+4. **Git Workflow**:
+   - Commit messages should follow conventional commits format
+   - Pull and rebase before pushing changes
+   - Keep PRs focused on single features or fixes
+   - Squash commits when merging to main
+
+5. **Security**:
+   - Sanitize all user inputs
+   - Use environment variables for sensitive information
+   - Implement proper CORS configuration
+   - Never commit secrets or environment files
