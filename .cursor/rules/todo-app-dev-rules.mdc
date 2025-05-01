@@ -1,7 +1,7 @@
 ---
 description: Follow the rules to better understand the project
 globs: *
-alwaysApply: false
+alwaysApply: true
 ---
 # Modern Todo App Developer Rules
 

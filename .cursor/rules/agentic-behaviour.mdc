@@ -22,7 +22,8 @@ Tasks from the [tasklist.md](mdc:documentation/tasklist.md) project plan:
    - Apply best practices for the stack
 5. **Checkpoint**: Pause for feedback after implementing the minimum scope
 6. **Completion**: 
-   - Update tasklist.md to mark the task as completed upon approval
+   - You need to validate that given task is completed and show the proof to the user (me). You need to STOP ANY FURTHER ACTION AND WAIT MY FEEDBACK.
+   - Tasks can only be marked complete when the user explicitly states "IT IS COMPLETE" or gives clear approval
    - Format: change `- [ ]` to `- [x]` for the completed task
 7. **Continuation**: Return to step 1 and select the next unchecked task
 
