@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/todos';
+// Use relative URL; Vite dev server proxies to backend.
+const API_URL = '/api/todos';
 
 const todoService = {
   getAll: async () => {
