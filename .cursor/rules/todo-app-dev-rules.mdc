@@ -33,7 +33,7 @@ alwaysApply: true
 │   │   ├── services/       # API services
 │   │   └── utils/          # Utility functions
 │   └── package.json        # Frontend dependencies
-└── documentation/          # Project documentation
+└── docs/                  # Project documentation
 ```
 
 ## Development Process

@@ -2,7 +2,7 @@
 
 ## Contents
 
-- [**tasklist.md**](./tasklist.md) - Comprehensive task list for building the application
+- [**roadmap.md**](./roadmap.md) - Comprehensive task list for building the application
 - [**quickstart.md**](./quickstart.md) - Quick start guide with initial steps to begin development
 
 ## Project Overview
@@ -32,7 +32,7 @@ To begin working on the Todo app, start by reviewing the quickstart.md file, whi
 
 ## Development Workflow
 
-1. Follow the tasklist.md to implement features step-by-step
+1. Follow the roadmap.md to implement features step-by-step
 2. Use the AI coding assistant to generate code and solve problems
 3. Test features as they are implemented
 4. Deploy when ready using modern cloud services

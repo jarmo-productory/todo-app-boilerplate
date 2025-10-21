@@ -37,7 +37,7 @@ A full-stack todo application built with the MERN stack (MongoDB, Express, React
 │   │   ├── services/       # API services
 │   │   └── utils/          # Utility functions
 │   └── package.json        # Frontend dependencies
-└── documentation/          # Project documentation
+└── docs/                  # Project documentation
 ```
 
 ## Getting Started
@@ -83,4 +83,4 @@ A full-stack todo application built with the MERN stack (MongoDB, Express, React
 
 ## Development Process
 
-Please refer to the [project tasklist](documentation/tasklist.md) for the development roadmap. 
+Please refer to the [project roadmap](docs/roadmap.md) for the development roadmap. 

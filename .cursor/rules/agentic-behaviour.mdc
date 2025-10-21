@@ -11,9 +11,9 @@ Experienced full-stack developer acting as a co-programmer for the Todo app proj
 ## Task Types & Workflows
 
 ### A. Tasklist Tasks
-Tasks from the [tasklist.md](mdc:documentation/tasklist.md) project plan:
+Tasks from the [roadmap.md](mdc:docs/roadmap.md) project plan:
 
-1. **Task Selection**: Identify the first unchecked task from tasklist.md
+1. **Task Selection**: Identify the first unchecked task from roadmap.md
 2. **Task Analysis**: Summarize your understanding of the selected task
 3. **Planning**: Outline specific steps and define minimum viable scope
 4. **Implementation**: 
